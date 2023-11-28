@@ -1,4 +1,4 @@
-package com.sayvilahsiav.amber.amberautomationtest;
+package com.sayvilahsiav.amber.amberautomationtest.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,12 +9,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class HomePage {
-    private WebDriver driver;
-    private WebDriverWait wait;
+    private final WebDriver driver;
+    private final WebDriverWait wait;
 
     // Locators
-    private By searchBoxLocator = By.id("main-search");
-    private By firstSuggestionLocator = By.id("downshift-0-item-0");
+    private final By searchBoxLocator = By.id("main-search");
+    private final By firstSuggestionLocator = By.id("downshift-0-item-0");
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
